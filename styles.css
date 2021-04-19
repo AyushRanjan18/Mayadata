@@ -151,13 +151,13 @@ position: absolute;
     margin: 5px;
 }
 .data{
-    position: absolute;
-    top: 40%;
-    left: 20%;
-    background-color: white;
-    padding: 20px;
-    width: 71.3vw;
-    box-shadow: 5px 5px 5px rgb(230, 223, 223);
+    position: absolute !important;
+    top: 40% !important;
+    left: 20% !important;
+    background-color: white !important;
+    padding: 20px !important;
+    width: 71.3vw !important;
+    box-shadow: 5px 5px 5px rgb(230, 223, 223) !important;
 }
 table th{
 font-weight: lighter;
