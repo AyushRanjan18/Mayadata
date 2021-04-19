@@ -167,3 +167,12 @@ table td{
     padding: 10px;
     text-align: center;
 }
+button{
+  float: right;
+  margin-right: 50px;
+  padding: 5px;
+  background-color: rgb(4, 83, 148);
+  color: white;
+  width: 60px;
+  border-radius: 20px;
+}
