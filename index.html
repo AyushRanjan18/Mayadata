@@ -28,8 +28,55 @@
             From : <input type="date">
             To : <input type="date">
         </div>
-        <div class="table">
-
+        <div class="data">
+            <table  style="width: 100%">
+                <tr  class="bg-info">
+                    <th>Sl. no</th>
+                    <th>Meeting Name</th>
+                    <th>No of People Attending </th>
+                    <th>Date</th>
+                    <th>Start Time </th>
+                    <th>End Time</th>
+                </tr>
+            
+                <tbody id="myTable">
+                    
+                </tbody>
+            </table>
+            
+            <script>
+                var myArray = [
+                { "Sl_no" : "1","Meeting_Name" : "John", "No_of_People_Attending" : "5" ,"Date" : "11/04/2020","Start_time" : "9:00 AM","End_Time" : "11:00 PM"},
+                { "Sl_no" : "1","Meeting_Name" : "John", "No_of_People_Attending" : "5" ,"Date" : "11/04/2020","Start_time" : "9:00 AM","End_Time" : "11:00 PM"},
+                { "Sl_no" : "1","Meeting_Name" : "John", "No_of_People_Attending" : "5" ,"Date" : "11/04/2020","Start_time" : "9:00 AM","End_Time" : "11:00 PM"},
+                { "Sl_no" : "1","Meeting_Name" : "John", "No_of_People_Attending" : "5" ,"Date" : "11/04/2020","Start_time" : "9:00 AM","End_Time" : "11:00 PM"},
+                { "Sl_no" : "1","Meeting_Name" : "John", "No_of_People_Attending" : "5" ,"Date" : "11/04/2020","Start_time" : "9:00 AM","End_Time" : "11:00 PM"},
+                { "Sl_no" : "1","Meeting_Name" : "John", "No_of_People_Attending" : "5" ,"Date" : "11/04/2020","Start_time" : "9:00 AM","End_Time" : "11:00 PM"},
+                ]
+                
+                buildTable(myArray)
+            
+            
+            
+                function buildTable(data){
+                    var table = document.getElementById('myTable')
+            
+                    for (var i = 0; i < data.length; i++){
+                        var row = `<tr>
+                                        <td>${data[i].Sl_no}</td>
+                                        <td>${data[i].Meeting_Name}</td>
+                                        <td>${data[i].No_of_People_Attending}</td>
+                                        <td>${data[i].Date}</td>
+                                        <td>${data[i].Start_time}</td>
+                                        <td>${data[i].End_Time}</td>
+                                  </tr>`
+                        table.innerHTML += row
+            
+            
+                    }
+                }
+            
+            </script>
         </div>
     </div>
     <div class="aboutme">
